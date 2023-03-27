@@ -7,10 +7,10 @@
     }
     50%{
         translate:-200px 0 ;
-        background-color: red;
+        background-color: rgb(42, 42, 42);
     }
     75%{
-        background-color: darkorchid;
+        background-color: green;
     }
     100%{
         translate: 0 0;
@@ -41,7 +41,7 @@ body{
     background-color: rgb(42, 42, 42);
     color: bisque;
     margin-left:12px;
-    transition: all 0.5s;
+    transition: all 0.1s;
 }
 .login{
     padding: 13px;
@@ -51,7 +51,7 @@ body{
     background-color: rgb(42, 42, 42);
     color: bisque;
     margin-left:12px;
-    transition: all 0.5s;
+    transition: all 0.1s;
 }
 h1{
     font-size:50px;
@@ -62,8 +62,9 @@ h1{
 }
 .line{
     background: rgb(3, 41, 255);
-    padding-top:2px ;
-    animation: line 6s infinite linear;
+    padding-block:2px ;
+    animation: line 6s infinite ease-in-out;
+    border-radius: 3px;
     
 }
 .login:hover{
@@ -80,12 +81,11 @@ main{
 }
 .buttons{
     padding: 25px;
-    border: none;
     border-radius: 20px;
-    font-size: 32px;
+    font-size: 50px;
     padding-inline: 100px;
-    background-color: rgb(47, 117, 47);
-    color: white;
+    background-color:inherit;
+    color: rgb(17, 255, 0);
     transition: all 0.5s;
 }
 .e:hover{
@@ -95,5 +95,29 @@ main{
     transform: scale(1.05);
 }
 .j:hover{
+    transform: scale(1.05);
+}
+.navicon{
+    padding: 5px;
+    margin-right: 20px;
+    border: none;
+    background: none;
+    color: white;
+
+}
+.navbar .login i{
+    margin-right: 4px;
+}
+.navicon{
+    padding: 10px;
+    padding-block: 17px;
+    border-radius: 7px;
+    color:  rgb(42, 42, 42);
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    transition: all 0.1s;
+}
+.navicon:hover{
     transform: scale(1.05);
 }

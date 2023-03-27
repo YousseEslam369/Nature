@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(IMG-20230322-WA0014.jpg);
+    background-size: cover;
+}
